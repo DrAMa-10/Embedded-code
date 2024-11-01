@@ -1,9 +1,12 @@
 on: push
+
 jobs:
-    job1: windows-latest
+    job1: 
+        runs-on: windows-latest
         steps:
         - run: pwd
         - run: ls    
     job2:
-        steps: windows-latest
+        runs-on: windows-latest
+        steps: 
         - run: node --version
